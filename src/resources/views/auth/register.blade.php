@@ -6,10 +6,8 @@
 </head>
 <body>
     <h1>会員登録</h1>
-    <!-- Fortifyが用意している /register という道にデータを送ります -->
     <form method="POST" action="/register">
-        @csrf <!-- セキュリティのための魔法の合言葉（必須！） -->
-
+        @csrf
         <div>
             <label>ユーザー名</label>
             <input type="text" name="name" required>

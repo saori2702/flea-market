@@ -6,10 +6,8 @@
 </head>
 <body>
     <h1>ログイン</h1>
-    <!-- Fortifyが用意している /login という道にデータを送ります -->
     <form method="POST" action="/login">
         @csrf
-
         <div>
             <label>メールアドレス</label>
             <input type="email" name="email" required>
