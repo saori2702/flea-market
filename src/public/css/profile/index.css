@@ -1,0 +1,116 @@
+.profile-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.user-visual {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-icon-large {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #fff;
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-edit-profile {
+    position: absolute;
+    right: 0;
+    padding: 8px 16px;
+    border: 1px solid #ff5555;
+    border-radius: 4px;
+    color: #ff5555;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-edit-profile:hover {
+    background-color: #ff3333;
+    color: #ffffff;
+}
+
+.tab-menu {
+    display: flex;
+    border-bottom: 1px solid #5f5f5f;
+    margin-bottom: 30px;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #5f5f5f;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.tab-item.active {
+    color: #ff5555;
+    border-bottom: 2px solid #ff5555;
+    margin-bottom: -1px;
+}
+
+.item-grid {
+    display: grid;
+    /* 画面幅に合わせて最小200pxのカードを自動で詰め込む */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px 20px;
+}
+
+.item-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sold-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.item-name {
+    font-size: 14px;
+    margin: 0;
+    color: #5f5f5f;
+}

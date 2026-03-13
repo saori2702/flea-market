@@ -1,0 +1,131 @@
+.purchase-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 60px;
+    font-family: sans-serif;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.side-panel {
+    width: 350px;
+}
+
+.item-summary, .payment-selection, .address-section {
+    padding: 30px 0;
+    border-bottom: 1px solid #5f5f5f;
+}
+
+.item-summary {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 0;
+}
+
+.item-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+}
+
+.item-text h2 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+
+.item-text p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#payment-selector {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.address-edit {
+    color: #0073cc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.address-edit:hover {
+    text-decoration: underline;
+}
+
+.confirm-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #5f5f5f;
+    margin-bottom: 40px;
+}
+
+.confirm-table th, .confirm-table td {
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.confirm-table th {
+    width: 40%;
+    font-weight: normal;
+}
+
+.confirm-table td {
+    text-align: right;
+}
+
+.confirm-table tr:first-child {
+    border-bottom: 1px solid #5f5f5f;
+}
+
+.buy-button__submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff5555;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*レスポンシブ対応*/
+@media (max-width: 800px) {
+    .purchase-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .side-panel {
+        width: 100%;
+    }
+}
+
+.form__error {
+    color: red;
+    font-size: 12px;
+    min-height: 20px;
+    margin-bottom: 15px;
+}

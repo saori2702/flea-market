@@ -15,12 +15,19 @@ class Item extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id', 'condition_id', 'name', 'brand', 'description', 'price', 'image_url', 'category_id'
+    ];
+
     public function user() {
         return $this->belongsTo(User::class);
     }
 
-    public function category() {
-        return $this->belongsTo(Category::class);
+    public function getCategoriesAttribute() {
+        $value = $this->category_id;
+        $cleanValue = str_replace(['"', "'"], '', (string)$value);
+        $ids = explode(',', $cleanValue);
+        return \App\Models\Category::whereIn('id', $ids)->get();
     }
 
     public function condition() {
@@ -34,4 +41,15 @@ class Item extends Model
     public function likes() {
         return $this->hasMany(Like::class);
     }
+
+    public function order()
+    {
+        return $this->hasOne(Order::class);
+    }
+
+    public function is_liked_by_auth_user()
+    {
+        return $this->likes->where('user_id', auth()->id())->first();
+    }
+
 }
