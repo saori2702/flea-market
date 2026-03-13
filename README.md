@@ -1,8 +1,8 @@
 ## アプリケーション名
 -COACHTECHフリマサイト
 ## 環境構築
-'''
 # リポジトリのクローン
+```bash
 git clone git@github.com:saori2702/flea-market.git
 # DockerDesktopアプリを立ち上げる
 docker-compose up -d --build
