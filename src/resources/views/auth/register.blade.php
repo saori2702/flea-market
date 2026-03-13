@@ -1,32 +1,66 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>会員登録</title>
-</head>
-<body>
-    <h1>会員登録</h1>
-    <form method="POST" action="/register">
-        @csrf
-        <div>
-            <label>ユーザー名</label>
-            <input type="text" name="name" required>
-        </div>
-        <div>
-            <label>メールアドレス</label>
-            <input type="email" name="email" required>
-        </div>
-        <div>
-            <label>パスワード</label>
-            <input type="password" name="password" required>
-        </div>
-        <div>
-            <label>確認用パスワード</label>
-            <input type="password" name="password_confirmation" required>
-        </div>
+@extends('layouts.app')
 
-        <button type="submit">登録する</button>
-    </form>
-    <a href="/login">ログインはこちら</a>
-</body>
-</html>
+@section('css')
+<link rel="stylesheet" href="{{ asset('css/auth/register.css') }}" />
+@endsection
+
+@section('content')
+<div class="register-form">
+    <div class="register-form__group">
+        <div class="register-header">
+            <h1>会員登録</h1>
+        </div>
+        <form class="form-group" method="POST" action="/register">
+            @csrf
+            <div class="group-content">
+                <label for="name">ユーザー名</label>
+                <div class="input-text">
+                    <input type="text" name="name" />
+                </div>
+            </div>
+            <div class="form__error">
+                @error('name')
+                    {{$message}}
+                @enderror
+            </div>
+            <div class="group-content">
+                <label for="email">メールアドレス</label>
+                <div class="input-text">
+                    <input type="email" name="email" />
+                </div>
+            </div>
+            <div class="form__error">
+                @error('email')
+                    {{$message}}
+                @enderror
+            </div>
+            <div class="group-content">
+                <label for="password">パスワード</label>
+                <div class="input-text">
+                    <input type="password" name="password" />
+                </div>
+            </div>
+            <div class="form__error">
+                @error('password')
+                    {{$message}}
+                @enderror
+            </div>
+            <div class="group-content">
+                <label for="password">確認用パスワード</label>
+                <div class="input-text">
+                    <input type="password" name="password_confirmation" />
+                </div>
+            </div>
+            <div class="form__error">
+                @error('password')
+                    {{$message}}
+                @enderror
+            </div>
+            <div class="register-button">
+                <button class="register-button__submit" type="submit">登録する</button>
+            </div>
+        </form>
+    </div>
+    <a class="login-link" href="/login">ログインはこちら</a>
+</div>
+@endsection
