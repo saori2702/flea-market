@@ -23,17 +23,17 @@
 }
 
 .item-info h1 {
-    font-size: 32px;
+    font-size: 42px;
     margin-bottom: 5px;
 }
 
 .brand-name {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .price {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -80,8 +80,7 @@
 }
 
 .item-info h2 {
-    font-size: 24px;
-    border-bottom: 1px solid #5f5f5f;
+    font-size: 30px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     margin-top: 40px;
@@ -94,7 +93,7 @@
 
 .detail-table span {
     display: inline-block;
-    background-color: #a09d9ddc;
+    background-color: #d9d9d9;
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 14px;
@@ -117,7 +116,7 @@
 }
 
 .comment-item p {
-    background-color: #e5e5e5;
+    background-color: #d9d9d9;
     padding: 15px;
     border-radius: 4px;
 }

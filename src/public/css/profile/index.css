@@ -1,5 +1,5 @@
 .profile-container {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 40px auto;
     padding: 0 20px;
     font-family: sans-serif;
@@ -28,7 +28,7 @@
 }
 
 .user-name {
-    font-size: 24px;
+    font-size:34px;
     font-weight: bold;
 }
 
@@ -36,11 +36,11 @@
     position: absolute;
     right: 0;
     padding: 8px 16px;
-    border: 1px solid #ff5555;
+    border: 2px solid #ff5555;
     border-radius: 4px;
     color: #ff5555;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -61,7 +61,7 @@
     text-decoration: none;
     color: #5f5f5f;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .tab-item.active {

@@ -1,13 +1,13 @@
 .edit-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 680px;
     margin: 50px auto;
     font-family: sans-serif;
 }
 
 .register-header h1 {
     text-align: center;
-    font-size: 24px;
+    font-size: 36px;
     margin-bottom: 40px;
 }
 
@@ -31,12 +31,13 @@
     display: inline-block;
     padding: 8px 16px;
     color: #ff5555;
-    border: 1px solid #ff5555;
+    border: 2px solid #ff5555;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    margin-left: 20px;
 }
 
 .btn-select-image:hover {
@@ -49,7 +50,7 @@
 
 .form-group label {
     display: block;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -80,7 +81,7 @@
     color: #ffffff;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
